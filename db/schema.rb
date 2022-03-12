@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2022_03_12_075028) do
 
-  create_table "todos", force: :cascade do |t|
+  create_table "todos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.text "detail"
     t.date "expire_date"
