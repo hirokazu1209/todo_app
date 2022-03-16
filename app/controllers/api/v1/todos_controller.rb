@@ -1,6 +1,6 @@
 class Api::V1::TodosController < ApplicationController
   def index
-    todos = Todo.order(create_at: :desc)
+    todos = Todo.all(create_at: :desc)
     render json: { status: 'SUCCESS', message: 'Loaded posts', data: todos }
   end
 
