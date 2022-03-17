@@ -4,6 +4,7 @@ class Api::V1::TodosController < ApplicationController
     render json: { status: 'SUCCESS', message: 'Loaded posts', data: todos }
   end
 
+  #create
   def create
     todo = Todo.new(todo_params)
     if todo.save
