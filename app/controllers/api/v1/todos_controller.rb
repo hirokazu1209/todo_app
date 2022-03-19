@@ -5,7 +5,7 @@ class Api::V1::TodosController < ApplicationController
     render json: { status: 'SUCCESS', message: 'Loaded posts', data: todos }
   end
 
-  #create
+  #Todoリストを作成する
   def create
     todo = Todo.new(todo_params)
     if todo.save
