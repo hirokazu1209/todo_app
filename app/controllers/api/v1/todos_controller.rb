@@ -1,7 +1,8 @@
 class Api::V1::TodosController < ApplicationController
   # 一覧画面を表示する
   def index
-    todos = Todo.all(create_at: :desc)
+    # binding.pry
+    todos = Todo.all
     render json: { status: 'SUCCESS', message: 'Loaded posts', data: todos }
   end
 
