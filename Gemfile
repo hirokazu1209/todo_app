@@ -38,6 +38,7 @@ group :development do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc'
+  gem 'webpacker', github:'rails/webpacker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
